@@ -1,0 +1,7 @@
+<h1> Restaurants </h1>
+<h2> Add a Restaurant </h2>
+<p><%= link_to 'New Restaurant', new_review_path %></p>
+<% @reviews.each do |review| %>
+  <h2><%= review.title %></h2>
+  <%= link_to 'Show Review', review_path(review) %>
+<% end %>
