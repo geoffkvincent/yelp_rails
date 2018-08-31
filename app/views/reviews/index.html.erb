@@ -4,4 +4,6 @@
 <% @reviews.each do |review| %>
   <h2><%= review.title %></h2>
   <%= link_to 'Show Review', review_path(review) %>
+  <%= link_to 'Edit', edit_review_path(review) %>
+  <%= link_to 'Delete', review, method: :delete %>
 <% end %>
